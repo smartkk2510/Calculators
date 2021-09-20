@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Calculators</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">CALCO</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav  mb-2 mb-lg-0 ms-auto">
+          <li class="nav-item mx-3">
+            <a class="nav-link " aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown mx-3">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              CALCULATOR
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="CGPA.html">CGPA CALCULATOR</a></li>
+              <li><a class="dropdown-item" href="Electric_bill.html">ELECTRIC BILL CALACULATOR</a></li>
+              <li><a class="dropdown-item active" selected href="calculator.html">CALCULATOR</a></li>
+            </ul>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="#">about</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main class="bg-secondary mt-0 py-3">
+    <section id="calculator-container" class="container">
+
+      <div class="row">
+        <div class="col-lg-6 mx-auto mb-3">
+          <h1 class="my-5 " style="color : white">CALCULATOR</h1>
+          <div class="output bg-primary p-4">
+            <div data-previous-operand class="ans bg-primary mb-0"></div>
+            <div data-current-operand class="ans bg-primary mb-0 "> </div>
+          </div>
+<!-- data-operation is noting but our custom attribute to select an element
+instead of selecting with classes or id we already seen this in "BS" => data-bs-toogle
+these are called as data attributes.
+the reason y we using here is we use classes for selecting in css and data attributes
+for selecting in JS.so it's easier to differentiate  -->
+          <div class="operation-container">
+            <button data-operation class="add op btn">+</button>
+            <button data-operation  class="sub op btn">-</button>
+            <button data-operation  class="mul op btn">x</button>
+            <button data-operation  class="divide op btn">/</button></button>
+          </div>
+          <div class="whole-op-container">
+            <div class="number-container ">
+              <div class="number-rows">
+                <button data-number class="number seven btn">7</button>
+                <button data-number class="number eight btn">8</button>
+                <button data-number class="number nine  btn">9</button></button>
+              </div>
+              <div class="number-rows">
+                <button data-number class="number four  btn">4</button>
+                <button data-number class="number five  btn">5</button></button>
+                <button data-number class="number six  btn">6</button></button>
+              </div>
+              <div class="number-rows">
+                <button data-number class="number one  btn">1</button>
+                <button data-number class="number two  btn">2</button></button>
+                <button data-number class="number three  btn">3</button>
+              </div>
+              <div class="number-rows">
+                <button data-all-clear class="number clear  btn">C</button>
+                <button data-number class="number zero  btn">0</button>
+                <button data-number class="number dot  btn">.</button>
+              </div>
+            </div>
+            <button data-equals class="equalto ms-0 btn">=</button>
+
+          </div>
+
+
+        </div>
+
+    </section>
+  </main>
+  <footer class="container-fluid">
+    <a href="#"><i class="footer-icon fab fa-twitter"></i></a>
+    <a href="#"><i class="footer-icon fab fa-facebook-f"></i></a>
+    <a href="#"> <i class="footer-icon fab fa-instagram"></i></a>
+    <a href="#"><i class="footer-icon fas fa-envelope"></i></a>
+    <p> Made with ❤️ Karthikeyan.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="calculator.js" charset="utf-8"></script>
+</body>
+
+</html>

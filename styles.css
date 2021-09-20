@@ -1,0 +1,27 @@
+body{
+  text-align: center;
+}
+.Calculators-selector{
+  background-color: #a4508b;
+  background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+}
+.calc-img{
+  width: 70%;
+
+transform: rotate(12deg);
+}
+#CGPA-calculators-container{
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+}
+.res-glow{
+    font-size: 50px;
+    color: #fff;
+    background-color: #6ECB63;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .footer-icon{
+  margin: 20px 10px;
+  color: black;
+}
